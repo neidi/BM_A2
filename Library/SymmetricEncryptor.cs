@@ -23,7 +23,7 @@ public class SymmetricEncryptor
         // 1. get the bytes from the encoded plaintext.
         var bytes = Encoding.UTF8.GetBytes(plaintext);
         // 2. use AES to encrypt the bytes from the encoded plaintext. This will give you a byte array.
-        byte[] encrypted = [];
+        var encrypted = _aes.EncryptCbc(bytes, _aes.IV);
         // 3. convert byte array to base64 string and return.
         return ByteArrayFunctions.ByteArrayToString(encrypted);
     }
