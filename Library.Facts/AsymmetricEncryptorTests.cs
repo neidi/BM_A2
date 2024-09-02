@@ -1,6 +1,4 @@
-﻿using EncryptionDecryption;
-
-namespace Library.Facts;
+﻿namespace Library.Facts;
 
 using FluentAssertions;
 
