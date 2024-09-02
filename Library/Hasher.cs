@@ -12,7 +12,7 @@ public class Hasher
         var bytes = Encoding.UTF8.GetBytes(plaintext);
         
         // Use hash function of sha256
-        byte[] hash = [];
+        var hash = sha256.ComputeHash(bytes);
         
         return ByteArrayFunctions.ByteArrayToString(hash);
     }
